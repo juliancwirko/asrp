@@ -1,0 +1,58 @@
+/*!
+* jQuery Another Select Replacement Plugin
+* Original author: Julian Ćwirko
+* Website: http://www.redsunmedia.pl
+* Licensed under the MIT license
+*/
+
+.asrp-wrapper {
+	width: 300px;
+	font-family: Verdana,Geneva,Kalimati,sans-serif;
+	position: relative;
+}
+.asrp-fire {
+	height: 40px;
+	line-height: 40px;
+	position: relative;
+	background: #343434;
+	min-width: 200px;
+	color: #fff;
+	padding: 0 40px 0 10px;
+	cursor: pointer;
+	z-index: 1;
+}
+.asrp-fire:after {
+	content: "";
+	position: absolute;
+	height: 0;
+	width: 0;
+	border: 7px solid transparent;
+	border-top-color: #fff;
+	right: 15px;
+	top: 17px;
+}
+.asrp-list {
+	transition: all .2s linear;
+	-webkit-transition: all .2s linear; /*list animation*/
+	opacity: 0;
+	margin-top: -15px;
+	background: #343434;
+	color: #fff;
+	position: absolute;
+	z-index: -1;
+}
+.asrp-list > div {
+	transition: background .2s linear;
+	-webkit-transition: background .2s linear;
+	padding: 0 10px;
+	line-height: 40px;
+	cursor: pointer;
+}
+.asrp-list > div:hover {
+	background: #282828;
+}
+.asrp-slide-down{
+	opacity: 1;
+	margin-top: 3px;
+	z-index: 999;
+}

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Another Select Replacement Plugin</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link href='http://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+	<link href="http://netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="../jquery.asrp.css"></link>
+</head>
+<body>
+	<div class="menu">
+		<div>
+			<a href="mailto:julian.cwirko@gmail.com"><i class="icon-envelope"></i> E-mail</a> <a href="http://www.redsunmedia.pl"><i class="icon-link"></i> WWW</a> <a href="https://github.com/juliancwirko/vsts"><i class="icon-github"></i> GitHub</a>
+		</div>
+	</div>
+	<div class="container">
+		<h1>Another Select Replacement Plugin Demo:</h1>
+			<form action="" class="clearfix" method="get">
+				<div class="block">
+					<select class="asrp" name="opt1">
+						<option value="1">Option 1</option>
+						<option value="2">Option 2</option>
+						<option value="3">Option 3</option>
+					</select>
+				</div>
+				<div class="block">
+					<select class="asrp" name="opt2">
+						<option value="4">Option 4</option>
+						<option value="5">Option 5</option>
+						<option value="6">Option 6</option>
+					</select>
+				</div>
+				<div class="block">
+					<select class="asrp" name="opt3">
+						<option value="7">Option 7</option>
+						<option value="8">Option 8</option>
+						<option value="9">Option 9</option>
+					</select>
+				</div>
+				<input type="submit" value="Send" class="send">
+			</form>
+		<div class="code">
+<h3>Usage:</h3>
+<pre>
+	..all styling by CSS (smooth animations too)
+
+	...
+
+	&lt;link rel="stylesheet" href="jquery.asrp.css"&gt;&lt;/link&gt;
+	&lt;script src="jquery.js"&gt;&lt;/script&gt;
+	&lt;script src="jquery.asrp.js"&gt;&lt;/script&gt;
+	&lt;script&gt;
+		(function(){
+			$('select.asrp').asrp();
+		})()
+	&lt;/script&gt;
+
+	...
+
+	..or You can set your own classes:
+
+	...
+
+	&lt;script&gt;
+		(function(){
+			$('select.asrp').asrp({
+				wrapperClass: 'asrp-wrapper',
+				triggerClass: 'asrp-fire',
+				listClass: 'asrp-list',
+				listSlideClass: 'asrp-slide-down'
+			});
+		})()
+	&lt;/script&gt;
+</pre>
+		</div>
+	</div>
+
+	<script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<script src="../jquery.asrp.js"></script>
+	<script>
+		(function(){
+			$('.asrp').asrp();
+		})()
+	</script>
+</body>
+</html>
