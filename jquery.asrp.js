@@ -54,7 +54,8 @@
 						select = $(this).closest('.'+settings.wrapperClass).find('select');
 						triggerdiv = $(this).closest('.'+settings.wrapperClass).find('.'+settings.triggerClass);
 						select.find('option').prop('selected', false);
-						select.find('option[value='+selvalue+']').prop('selected', true);
+						select.find('option[value="'+selvalue+'"]').prop('selected', true);
+						select.find('option[value="'+selvalue+'"]').trigger('change');
 						triggerdiv.text($(this).text());
 						$('.'+settings.listClass).removeClass(settings.listSlideClass);
 						that.optionEventListenerUnbind(el, settings);
